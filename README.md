@@ -23,7 +23,11 @@
 - 한국어가 정본이며 해석이 갈리면 한국어를 따릅니다(ja·en 페이지 머리에 한 줄로 밝혀 둠).
 - 도메인 **with-ly.kr** (가비아, 2026-09-11, 자동연장). `CNAME` 파일과 Pages 설정에 넣었고 DNS는 A 4개(GitHub Pages IP)·CNAME(www)입니다.
   옛 주소 `hwan0197-spec.github.io/withly-site/`는 새 도메인으로 301 됩니다.
-- HTTPS 강제는 GitHub 인증서 발급이 끝난 뒤 켭니다 (`gh api -X PUT repos/hwan0197-spec/withly-site/pages -F https_enforced=true`).
+- **DNS·TLS는 Cloudflare(무료), 원본은 GitHub Pages, GitHub의 Enforce HTTPS는 사용하지 않습니다** (2026-09-11).
+  GitHub Pages 인증서가 `bad_authz`로 1시간 넘게 발급되지 않아 전환했습니다. 네임서버 `blair`·`louis.ns.cloudflare.com`,
+  프록시 On, SSL 모드 **Full**(원본이 `*.github.io` 인증서를 내밀어 Full (strict)는 안 됩니다), Always Use HTTPS On.
+  Pages의 `cname`과 이 저장소의 `CNAME` 파일은 GitHub이 요청을 이 사이트로 보내는 데 필요하므로 **지우지 않습니다**.
+  GitHub의 Enforce HTTPS를 켜면 Cloudflare와 리디렉션이 겹칠 수 있어 꺼 둡니다.
 
 ## 원문
 
