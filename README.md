@@ -1,6 +1,6 @@
 # withly-site
 
-**Withly TOPIK** 앱의 공개 문서 페이지. GitHub Pages로 서비스합니다.
+**Withly TOPIK** 앱의 공개 문서 페이지. GitHub Pages로 **https://with-ly.kr** 에 서비스합니다.
 
 앱 저장소(`topik-writing`)는 비공개라 Pages를 켤 수 없어 이 저장소를 따로 두었습니다.
 여기에는 **공개해도 되는 문서만** 둡니다 — 앱 코드·프롬프트·문항·키는 넣지 않습니다.
@@ -18,7 +18,9 @@
 
 - 세 문서 모두 **법률 검토 전 초안**입니다. 스토어 제출 전에 변호사 검토를 거칩니다.
 - **일본어는 네이티브 검수 전**입니다. 한국어가 정본이며 해석이 갈리면 한국어를 따릅니다.
-- 도메인은 아직 정하지 않았습니다. 정해지면 `CNAME`을 추가합니다.
+- 도메인 **with-ly.kr** (가비아, 2026-09-11, 자동연장). `CNAME` 파일과 Pages 설정에 넣었고 DNS는 A 4개(GitHub Pages IP)·CNAME(www)입니다.
+  옛 주소 `hwan0197-spec.github.io/withly-site/`는 새 도메인으로 301 됩니다.
+- HTTPS 강제는 GitHub 인증서 발급이 끝난 뒤 켭니다 (`gh api -X PUT repos/hwan0197-spec/withly-site/pages -F https_enforced=true`).
 
 ## 원문
 
