@@ -65,3 +65,32 @@ a { color: var(--primary-dark); }
 }
 .langs button[aria-selected="true"] { background: var(--primary); color: #fff; }
 footer { color: var(--text-secondary); font-size: 14px; max-width: 760px; margin: 0 auto; padding: 0 16px 40px; }
+
+/* ── 홈(회사 소개) ─────────────────────────────── */
+.hero { padding: 8px 0 4px; }
+.hero h1 { font-size: 26px; margin-bottom: 2px; }
+.hero .en-name { color: var(--text-secondary); font-size: 15px; margin: 0 0 12px; }
+.hero .lead { font-size: 17px; }
+.features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 12px 0 4px; }
+.feature { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.feature h3 { margin: 0 0 6px; color: var(--primary-dark); }
+.feature p { margin: 0; font-size: 15px; }
+.info th { width: 7.5em; }
+.store { color: var(--text-secondary); }
+.revised { color: var(--text-secondary); font-size: 14px; margin: 0 0 16px; }
+footer nav a { margin-right: 14px; }
+
+/* ── 좁은 화면 (380px 폰 기준) ───────────────────── */
+@media (max-width: 600px) {
+  body { font-size: 15px; }
+  main { padding: 16px 12px 48px; }
+  .card { padding: 16px; }
+  h1, .hero h1 { font-size: 21px; }
+  h2 { font-size: 17px; }
+  .features { grid-template-columns: 1fr; }
+  header nav a { display: inline-block; margin: 4px 12px 0 0; }
+  .langs button { padding: 8px 12px; margin: 0 6px 6px 0; }
+  table { font-size: 14px; }
+  th { white-space: normal; }
+  .info th { width: auto; }
+}
