@@ -21,7 +21,6 @@
   **일본어는 네이티브 검수 전**입니다. 2026-09-11 Apple Developer 등록이 "웹사이트 최소 콘텐츠/미작동"으로 철회되어,
   페이지 머리의 초안 상자를 앞당겨 떼고 "최종 개정 2026-09-10" 한 줄로 바꿨습니다. 검토·검수가 끝나면 본문을 고치고 개정일을 올립니다.
 - 한국어가 정본이며 해석이 갈리면 한국어를 따릅니다(ja·en 페이지 머리에 한 줄로 밝혀 둠).
-- 회사 정보의 **상세 주소는 아직 비어 있습니다**(서울특별시까지만). D-U-N-S 등록 주소와 똑같이 채워야 합니다.
 - 도메인 **with-ly.kr** (가비아, 2026-09-11, 자동연장). `CNAME` 파일과 Pages 설정에 넣었고 DNS는 A 4개(GitHub Pages IP)·CNAME(www)입니다.
   옛 주소 `hwan0197-spec.github.io/withly-site/`는 새 도메인으로 301 됩니다.
 - HTTPS 강제는 GitHub 인증서 발급이 끝난 뒤 켭니다 (`gh api -X PUT repos/hwan0197-spec/withly-site/pages -F https_enforced=true`).
