@@ -1,6 +1,6 @@
 # withly-site
 
-**주식회사 위슬리(Withly Co., Ltd.) 회사 홈페이지**와 **Withly TOPIK** 공개 문서. GitHub Pages로 **https://with-ly.kr** 에 서비스합니다.
+**주식회사 위슬리(Withly Co., Ltd.) 회사 홈페이지**와 **withly TOPIK** 공개 문서. GitHub Pages로 **https://with-ly.kr** 에 서비스합니다.
 
 앱 저장소(`topik-writing`)는 비공개라 Pages를 켤 수 없어 이 저장소를 따로 두었습니다.
 여기에는 **공개해도 되는 문서만** 둡니다 — 앱 코드·프롬프트·문항·키는 넣지 않습니다.
