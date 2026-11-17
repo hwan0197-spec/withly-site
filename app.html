@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>withly TOPIK — 앱 받기 · Download</title>
+<meta property="og:title" content="withly TOPIK">
+<meta property="og:description" content="TOPIK 공개 기출 · 쓰기 AI 첨삭 / TOPIK past exams + AI writing feedback">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><a href="./">withly</a></div></header>
+<main>
+<div class="card">
+  <h1>withly TOPIK</h1>
+  <p>스토어로 이동합니다 · ストアへ移動します · Opening the store…</p>
+  <p class="stores">
+    <a class="store-btn" id="ios" href="https://apps.apple.com/app/apple-store/id6833775457?pt=129787812&amp;ct=app-noscript&amp;mt=8">App Store</a>
+    <a class="store-btn" id="android" href="https://play.google.com/store/apps/details?id=kr.withly.topik&amp;referrer=utm_source%3Dapp-noscript%26utm_medium%3Dlink%26utm_campaign%3Dapp-noscript">Google Play</a>
+  </p>
+</div>
+</main>
+<script>
+// 채널별 측정 링크: with-ly.kr/app?c=<채널> → 기기에 맞는 스토어로, c 값을 애플 ct · 플레이 utm 으로 넘긴다.
+// 채널 목록은 앱 저장소 docs/마케팅/측정_링크.md
+(function () {
+  var c = '';
+  try { c = new URLSearchParams(location.search).get('c') || ''; } catch (e) {}
+  c = c.toLowerCase().replace(/[^a-z0-9_-]/g, '').slice(0, 30) || 'direct';
+  var ios = 'https://apps.apple.com/app/apple-store/id6833775457?pt=129787812&ct=' + c + '&mt=8';
+  var android = 'https://play.google.com/store/apps/details?id=kr.withly.topik&referrer=' +
+    encodeURIComponent('utm_source=' + c + '&utm_medium=link&utm_campaign=' + c);
+  document.getElementById('ios').href = ios;
+  document.getElementById('android').href = android;
+  var ua = navigator.userAgent || '';
+  var isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var isAndroid = /Android/.test(ua);
+  if (isIOS) location.replace(ios);
+  else if (isAndroid) location.replace(android);
+})();
+</script>
+</body>
+</html>
